@@ -54,7 +54,10 @@ class PredictResponse(BaseModel):
 @app.get("/health")
 def health_check():
     if model is None or vectorizer is None:
-        return {"status": "unhealthy", "error": "Model or vectorizer not loaded"}
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Model or vectorizer not loaded",
+        )
     return {"status": "ok"}
 
 

@@ -1,8 +1,8 @@
 # 📰 Veritas AI — Fake News Sentinel Web App
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live_on_Vercel-teal?style=for-the-badge)](https://veritas-ai-sentinel.vercel.app)
-*Live Frontend URL: https://veritas-ai-sentinel.vercel.app*  
-*Live Backend API URL: https://veritas-ai-api.onrender.com*
+[![Live Demo](https://img.shields.io/badge/Demo-Live_on_Vercel-teal?style=for-the-badge)](https://veritas-ai-rouge.vercel.app)
+*Live Frontend URL: https://veritas-ai-rouge.vercel.app*  
+*Live Backend API URL: https://veritas-ai-etx1.onrender.com*
 
 A full-stack, stateless machine learning web application that classifies news articles as **REAL** or **FAKE** in real-time. Built to deploy a pre-trained scikit-learn NLP pipeline for professional portfolio representation.
 

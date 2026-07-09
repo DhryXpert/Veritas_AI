@@ -34,7 +34,7 @@ export default function App() {
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 5000); // 5-second timeout
 
-    fetch(`${API_URL}/health`, { signal: controller.signal })
+    fetch(`${API_URL}/status`, { signal: controller.signal })
       .then((res) => {
         clearTimeout(timeoutId);
         if (res.ok) {

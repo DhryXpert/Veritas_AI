@@ -51,7 +51,7 @@ class PredictResponse(BaseModel):
     cleaned_length: int
 
 
-@app.get("/health")
+@app.get("/status")
 def health_check():
     if model is None or vectorizer is None:
         raise HTTPException(

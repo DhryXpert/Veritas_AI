@@ -32,7 +32,7 @@ export default function App() {
   // Ping server health on mount to detect cold starts
   useEffect(() => {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 2000); // 2-second timeout
+    const timeoutId = setTimeout(() => controller.abort(), 5000); // 5-second timeout
 
     fetch(`${API_URL}/health`, { signal: controller.signal })
       .then((res) => {

@@ -118,6 +118,7 @@ export default function App() {
       {/* Header */}
       <header className="flex items-center justify-between border-b border-slate-900 pb-3 mb-4 shrink-0">
         <div className="flex items-center gap-3">
+          <img src="/icons8-ai-32.png" alt="Veritas AI Logo" className="w-8 h-8 object-contain" />
           <h1 className="text-2xl font-extrabold tracking-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-emerald-400 to-indigo-400">
               Veritas AI

@@ -1,4 +1,7 @@
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 import joblib
 from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
@@ -11,7 +14,6 @@ app = FastAPI(title="Fake News Detector API", version="1.0.0")
 origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://veritas-ai-v1.vercel.app",
 ]
 frontend_url = os.getenv("FRONTEND_URL")
 if frontend_url:
